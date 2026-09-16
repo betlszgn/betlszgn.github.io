@@ -1,3 +1,2 @@
 # betlszgn.github.io
-work done perfectly 
-succesful 
+Love you sevgilim <3
