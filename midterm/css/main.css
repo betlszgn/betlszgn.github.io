@@ -1,16 +1,25 @@
+/* inculde padding and border */
 *{
     box-sizing: border-box;
 }
 
+/* base text size -> 1 rem = 16px */
 html{
     font-size: 16px;
 }
 
+/* page background, typography, and default margin reset */
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color:#928982;
     margin: 0px;
 }
+
+/* shared heading size */
+h2 {
+    font-size: 2rem;
+}
+
 
 .wrapper {
     max-width: 1200px; 
@@ -44,10 +53,6 @@ h1 {
     color: black;
     text-shadow: #928982 0px 0px 40px;
     font-size: 5.5rem;
-}
-
-h2 {
-    font-size: 2rem;
 }
 
 nav ul {
