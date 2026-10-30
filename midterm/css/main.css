@@ -21,6 +21,7 @@ h2 {
 }
 
 
+/* sets max width and centers the page */
 .wrapper {
     max-width: 1200px; 
     background-color: #b9b0a9;
@@ -28,15 +29,26 @@ h2 {
     margin: 0 auto;
 }
 
+/* adds side space inside the wrapper */
+.inner-wrapper {
+    padding: 0px 20px;
+}
+
+/* fixes layout breaking caused by floated images */
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+/* keeps the title inside the header */
 header {
     position: relative;
     height: 350px;
 }
 
-.facts {
-    clear: left;
-}
-
+/* responsive banner image cropped to fill header */
 header img {
     /* make image responsive  */ 
     width: 100%;
@@ -44,6 +56,7 @@ header img {
     object-fit: cover;
 }
 
+/* puts the title over the photo */
 h1 {
     position: absolute;
     bottom: -15px;
@@ -55,12 +68,15 @@ h1 {
     font-size: 5.5rem;
 }
 
+
+/* remove default list styling and indentation */
 nav ul {
     list-style-type: none;
     padding-left: 0;
     /* text-align: center; */
 }
 
+/* horizontal navigation items with vertical divider lines */
 nav li {
     display: inline-block;
     width: 376px;
@@ -69,34 +85,19 @@ nav li {
     border-right: 1px solid black;
 }
 
+/* remove divider border from the final menu item */
+nav li:last-child {
+    border-right: none;
+}
+
+/* link color and removal of default underline */
 nav li a {
     color: black;
     text-decoration: none;
 }
 
-nav li:last-child {
-    border-right: none;
-}
 
-.inner-wrapper {
-    padding: 0px 20px;
-}
-
-.clearfix::after{
-    content: '';
-    display: block;
-    clear: both;
-}
-
-article p{
-    font-size: 1.2rem;
-    /* 2. Flush left and right edges like a book or newspaper */
-  text-align: justify; 
-  
-  /* 3. Smooths out ugly gaps caused by justification by breaking long words */
-  hyphens: auto; 
-}
-
+/* float image to the left so text wraps smoothly around it */
 article img{
     width: 225px;
     height: 225px;
@@ -104,16 +105,27 @@ article img{
     margin: 0px 20px 0px 0px;
 }
 
-ul.facts {
+/* makes paragraph edges straight like a newspaper */
+article p{
     font-size: 1.2rem;
-
+    text-align: justify; 
+    hyphens: auto; 
 }
 
+/* facts list styling and clear to prevent float overlap */
+ul.facts {
+    clear: left;
+    font-size: 1.2rem;
+}
+
+
+/* outer form border container */
 .contact-box {
     border: 1px solid black;
     padding: 20px;
 }
 
+/* full-width styled text inputs and message box */
 .contact-box input[type="text"],
 .contact-box input[type="email"],
 .contact-box textarea {
@@ -123,14 +135,18 @@ ul.facts {
   border: 1px solid #392f24;
 }
 
+/* spacing for input titles and descriptions */
 .contact-box p {
   margin: 15px 0 5px 0;
 }
 
+/* spacing between radio buttons */
 .contact-box label {
   margin-right: 15px;
 }
 
+
+/* right-aligned footer credits with padding */
 footer{
     text-align: right;
     padding: 0px 20px 3px 0px;
