@@ -1,0 +1,132 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color:#928982;
+    margin: 0px;
+}
+
+.wrapper {
+    max-width: 1200px; 
+    background-color: #b9b0a9;
+    /*center block level element */
+    margin: 0 auto;
+}
+
+header {
+    position: relative;
+    height: 350px;
+}
+
+.facts {
+    clear: left;
+}
+
+header img {
+    /* make image responsive  */ 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+h1 {
+    position: absolute;
+    bottom: -15px;
+    /* left: 0; */
+    width: 100%;
+    text-align: center;
+    color: black;
+    text-shadow: #928982 0px 0px 40px;
+    font-size: 5.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-left: 0;
+    /* text-align: center; */
+}
+
+nav li {
+    display: inline-block;
+    width: 376px;
+    text-align: center;
+    font-size: 1.5rem;
+    border-right: 1px solid black;
+}
+
+nav li a {
+    color: black;
+    text-decoration: none;
+}
+
+nav li:last-child {
+    border-right: none;
+}
+
+.inner-wrapper {
+    padding: 0px 20px;
+}
+
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+article p{
+    font-size: 1.2rem;
+    /* 2. Flush left and right edges like a book or newspaper */
+  text-align: justify; 
+  
+  /* 3. Smooths out ugly gaps caused by justification by breaking long words */
+  hyphens: auto; 
+}
+
+article img{
+    width: 225px;
+    height: 225px;
+    float: left;
+    margin: 0px 20px 0px 0px;
+}
+
+ul.facts {
+    font-size: 1.2rem;
+
+}
+
+.contact-box {
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.contact-box input[type="text"],
+.contact-box input[type="email"],
+.contact-box textarea {
+  width: 100%;
+  display: block;
+  background-color: #ada59f;
+  border: 1px solid #392f24;
+}
+
+.contact-box p {
+  margin: 15px 0 5px 0;
+}
+
+.contact-box label {
+  margin-right: 15px;
+}
+
+footer{
+    text-align: right;
+    padding: 0px 20px 3px 0px;
+}
